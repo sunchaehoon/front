@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>뉴비</title>
+</head>
+<body>
+
+    <div class="upload-main">
+        <header>
+            <div id="upload">
+                <p>동영상 업로드</p>
+            </div>
+            <img id="upload-modal-close" src="img/cross.png" width="28" height="28">
+        </header>
+    
+        <div class="line">
+            <img id="paper" src="img/paper.png" alt="" width="118" height="152">
+            <img id="point" src="img/point.png" alt="" width="37.6" height="38.5">
+            <span>
+                <button type="button">파일 선택</button>
+            </span>
+            <div class="drag">
+                <p style="text-align: center;">동영상 파일을 여기로 드래그하세요.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <img class="bar-pi" src="img/playin.png" alt="">
+        <span class="logo-text" onclick="location.href='index.html'">뉴비</span>
+        <img class="logo-img" src="img/logo.png" alt="" onclick="location.href='index.html'">
+        <img class="upload" id="upload-modal" src="img/upload.png"">
+        <img class="profile" src="img/profile.png" alt="" onclick="location.href='목적지 링크주소(URL)'">
+
+        <div class="search">
+            <img class="search-icon" src="img/search.png" alt="">
+            <input type="text" class="search-text" placeholder="검색" style="border:0 solid black"></input>
+        </div>
+    </div>
+    <div class="black_bg"></div>
+
+    <div class="center-cneter-be2">
+        <div class="videoback"></div>
+        <div class="video">
+            <iframe width="1080" height="608" src="https://www.youtube.com/embed/ToVGv82713o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <span class="vdtt">광주소프트웨어마이스터고를 소개합니다.</span>
+        <span class="exp">창의·인성을 갖추고 실력과 도전정신을 겸비한 세계와 소통할 수 있는
+            글로벌인 양성의 광주소프트웨어마이스터고등학교</span>
+        <div class="like">
+            <img src="img/likecnt.png" alt="" width="26.25" height="24">
+            <span>20</span>
+        </div>
+    </div>
+
+    <div class="vdcmtip">
+        <div class="prf"></div>
+        <input type="text" placeholder="입력" size="100">
+        <div class="bd"></div>
+        <div class="button">
+            <button id="cancel"><span>취소</span></button>
+            <button id="complete"><span>완료</span></button>
+        </div>   
+    </div>
+
+    <style>
+        body {
+            width: 1440px;
+            height: 1565.25px;
+        }
+    </style>
+
+
+<script>
+    window.onload = function() {
+ 
+    function onClick() {
+        document.querySelector('.upload-main').style.display ='block';
+        document.querySelector('.black_bg').style.display ='block';
+    }
+    function offClick() {
+        document.querySelector('.upload-main').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+    function onClick2() {
+     document.querySelector('.upload-main2').style.display ='block';
+     document.querySelector('.upload-main').style.display ='none';
+     document.querySelector('.black_bg').style.display ='block';
+    }   
+    function offClick2() {
+        document.querySelector('.upload-main2').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+    
+    document.getElementById('upload-modal').addEventListener('click', onClick);
+    document.getElementById('upload-modal-close').addEventListener('click', offClick);
+
+    document.getElementById('upload-modal2').addEventListener('click', onClick2);
+    document.getElementById('upload-modal-close2').addEventListener('click', offClick2);
+
+};
+</script>
+
+    
+</body>
+</html>
