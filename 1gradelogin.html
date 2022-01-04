@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>뉴비 로그인</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/lg.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+</head>
+<body>
+    <img class="lgnb" src="img/lgnb.png" alt="" >
+  <div class="login-form">
+    <form class="formm">
+      <input type="text" name="email" class="text-field1" placeholder="ID">
+      <div class="text-field1-li"></div>
+      <input type="password" name="password" class="text-field2" placeholder="PASSWORD">
+      <div class="text-field2-li"></div>
+      <!-- <input type="submit" value="login" class="submit-btn" onclick="hrefLink()"> -->
+      <input value="login" id="subsb" class="submit-btn" onclick="hrefLink(event)">
+    </form>
+ 
+    <!-- <div class="links">
+      <a href="#">비밀번호를 잊어버리셨나요?</a>
+    </div> -->
+    <div class="lf-bt">
+        <img id="lgkeep" src="img/lgkeep.png" alt="" width="18.75" height="18.75" onclick="toggleimg()">
+        <span class="statekeep">로그인 상태 유지</span>
+        <span class="signup">회원 가입</span>
+    </div>
+  </div>
+    <script src="JS/index.js"></script>
+
+</body>
+</html>
