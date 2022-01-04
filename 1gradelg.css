@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 5px;
+  }
+   
+  body {
+    margin: 0;
+    background-color: white;
+  }
+
+  .lgnb {
+    position: absolute;
+    width: 116.25px;
+    height: 65.34px;
+    left: 720.75px;
+    top: 192px;
+  }
+   
+  .login-form {
+    position: absolute;
+    width: 412.5px;
+    left: 568.5px;
+    top: 331.5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .text-field1 {
+    font-size: 14px;
+    border: none;
+    width: 405px;
+
+    font-family: Cafe24 Ssurround;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #505050;
+  }
+
+  .text-field1:focus {
+      outline: none;
+  }
+
+  .text-field1-li {
+      border-bottom: 2px solid #505050;
+      margin-bottom: 57.75px;
+  }
+
+  .text-field2 {
+    font-size: 14px;
+    border: none;
+    width: 405px;
+
+    font-family: Cafe24 Ssurround;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #505050;
+  }
+
+  .text-field2:focus {
+    outline: none;
+}
+
+  .text-field2-li {
+    border-bottom: 2px solid #505050;
+    margin-bottom: 57.75px;
+}
+   
+  .submit-btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 412.5px;
+    background-color: #FFE16F;
+    color: white;
+    box-shadow: 2px 2px 8px #999;
+
+    font-family: Cafe24 Ssurround;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .submit-btn:hover {
+    background-color: #FFC81E;
+  }
+   
+  /* .links {
+    text-align: center;
+  }
+   
+  .links a {
+    font-size: 12px;
+    color: #9B9B9B;
+  } */
+
+  .lf-bt {
+      display: flex;
+      margin-top: 18px;
+  }
+
+  .lf-bt img {
+      cursor: pointer;
+  }
+
+  .lf-bt .statekeep {
+      margin-left: 6px;
+      font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10.5px;
+    line-height: 14.25px;
+    display: flex;
+    align-items: center;
+
+    color: #C4C4C4;
+  }
+
+  .lf-bt .signup {
+      margin-left: 260px;
+      font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10.5px;
+    line-height: 14.25px;
+    display: flex;
+    align-items: center;
+
+    color: #C4C4C4;
+  }
