@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>뉴비</title>
+</head>
+<body>
+
+    <div class="upload-main">
+        <header>
+            <div id="upload">
+                <p>동영상 업로드</p>
+            </div>
+            <img id="upload-modal-close" src="img/cross.png" width="28" height="28">
+        </header>
+    
+        <div class="line">
+            <img id="paper" src="img/paper.png" alt="" width="118" height="152">
+            <img id="point" src="img/point.png" alt="" width="37.6" height="38.5">
+            <span>
+                <button type="button">파일 선택</button>
+            </span>
+            <div class="drag">
+                <p style="text-align: center;">동영상 파일을 여기로 드래그하세요.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <span class="logo-text" onclick="location.href='index.html'">뉴비</span>
+        <img class="logo-img" src="img/logo.png" alt="" onclick="location.href='index.html'">
+        <img class="upload" id="upload-modal" src="img/upload.png">
+        <img class="profile" src="img/profile.png" alt="" onclick="location.href='목적지 링크주소(URL)'">
+
+        <div class="search">
+            <img class="search-icon" src="img/search.png" alt="">
+            <input type="text" class="search-text" placeholder="검색" style="border:0 solid black"></input>
+        </div>
+    </div>
+    <div class="black_bg"></div>
+    <div class="center-left">
+        <img class="good" src="img/good.png" alt="" onclick="location.href='good.html'">
+        <img class="myvideo" src="img/myvideo.png" alt="" onclick="location.href='myvideo.html'">
+        <img class="myimg" src="img/myimg.png" alt="" onclick="location.href='cmnt.html'">
+        <img class="settings" src="img/settings-black.png" alt="" onclick="location.href='setup.html'">
+    </div>
+
+    <div class="center-cneter-be">                  
+        <div class="su-main">
+            <span class="su-main-text">개인정보</span>
+            <img class="su-main-p" src="img/setupp.png" alt="">
+        </div>
+        <div class="pi-list">
+            <div class="pi-list-n">
+                <span class="pi-list-n-l">이름</span>
+                <span class="pi-list-n-r">감자</span>
+            </div>
+            <div class="pi-list-em">
+                <span class="pi-list-em-l">이메일</span>
+                <span class="pi-list-em-r">alswoquddkslek123@gmail.com</span>
+            </div>
+            <div class="pi-list-b">
+                <span class="pi-list-b-l">생년월일</span>
+                <span class="pi-list-b-r">2021년 8월 7일</span>
+            </div>
+            <div class="pi-list-g">
+                <span class="pi-list-g-l">성별</span>
+                <span class="pi-list-g-r">남</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        window.onload = function() {
+     
+        function onClick() {
+            document.querySelector('.upload-main').style.display ='block';
+            document.querySelector('.black_bg').style.display ='block';
+        }
+        function offClick() {
+            document.querySelector('.upload-main').style.display ='none';
+            document.querySelector('.black_bg').style.display ='none';
+        }
+        function onClick2() {
+         document.querySelector('.upload-main2').style.display ='block';
+         document.querySelector('.upload-main').style.display ='none';
+         document.querySelector('.black_bg').style.display ='block';
+        }   
+        function offClick2() {
+            document.querySelector('.upload-main2').style.display ='none';
+            document.querySelector('.black_bg').style.display ='none';
+        }
+        
+        document.getElementById('upload-modal').addEventListener('click', onClick);
+        document.getElementById('upload-modal-close').addEventListener('click', offClick);
+
+        document.getElementById('upload-modal2').addEventListener('click', onClick2);
+        document.getElementById('upload-modal-close2').addEventListener('click', offClick2);
+
+    };
+    </script>
+
+    
+</body>
+</html>
