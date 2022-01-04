@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>뉴비</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+
+    <div class="upload-main">
+        <header>
+            <div id="upload">
+                <p>동영상 업로드</p>
+            </div>
+            <img id="upload-modal-close" src="img/cross.png" width="28" height="28">
+        </header>
+    
+        <div class="line">
+            <img id="paper" src="img/paper.png" alt="" width="118" height="152">
+            <img id="point" src="img/point.png" alt="" width="37.6" height="38.5">
+            <span>
+                <button type="button">파일 선택</button>
+            </span>
+            <div class="drag">
+                <p style="text-align: center;">동영상 파일을 여기로 드래그하세요.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-bar">
+        <span class="logo-text" onclick="location.href='index.html'">뉴비</span>
+        <img class="logo-img" src="img/logo.png" alt="" onclick="location.href='index.html'">
+        <img class="upload" id="upload-modal" src="img/upload.png">
+        <img class="profile" src="img/profile.png" alt="" onclick="location.href='목적지 링크주소(URL)'">
+
+        <div class="search">
+            <img class="search-icon" src="img/search.png" alt="">
+            <input type="text" class="search-text" placeholder="검색" style="border:0 solid black"></input>
+        </div>
+    </div>
+    <div class="black_bg"></div>
+
+    <div class="center-left">
+        <img class="good" src="img/good-black.png" alt="" onclick="location.href='good.html'">
+        <img class="myvideo" src="img/myvideo.png" alt="" onclick="location.href='myvideo.html'">
+        <img class="myimg" src="img/myimg.png" alt="" onclick="location.href='cmnt.html'">
+        <img class="settings" src="img/settings.png" alt="" onclick="location.href='setup.html'">
+    </div>
+
+    
+
+
+
+    <div class="center-cneter-be">
+        <div class="center-myvideo"></div>
+        <span class="center-main-text">좋아요 표시한 동영상</span>
+        <div class="like-video-1">
+            <img class="like-video-some" src="https://i.ytimg.com/vi/ZHbjm0Y3P1U/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLAoAyj1cjb4N7yQ5ud6fksPXsH1Aw" alt="" onclick="location.href='index.html'">
+            <span class="like-video-1-text">고기남자의 첫 브이로그</span>
+            <p>고기남자 MeatMan</p>
+            <img class="more-icon" src="img/more.png" alt="">
+        </div>
+        <div class="like-video-2">
+            <img class="like-video-some" src="https://i.ytimg.com/vi/9pHGTq66bYU/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLDFezG1SWp7YE12mAW95E0mSVqsoQ" alt="" onclick="location.href='index.html'">
+            <span class="like-video-2-text">프링이들 오늘은 나랑 집순이 하자 👧🏻 다 드루와</span>
+            <p>free지아</p>
+            <img class="more-icon" src="img/more.png" alt="">
+        </div>
+        <div class="like-video-3">
+            <img class="like-video-some" src="https://i.ytimg.com/vi/_VayNi2KqlI/hqdefault.jpg?s…AFwAcABBg==&rs=AOn4CLBpj7eSB9OkwQrvRTpObVXErflbCQ" alt="" onclick="location.href='index.html'">
+            <span class="like-video-3-text"> 장지환(괴물쥐)의 삶</span>
+            <p>괴물쥐 유튜브</p>
+            <img class="more-icon" src="img/more.png" alt="">
+        </div>
+        <div class="like-video-4">
+            <img class="like-video-some" src="https://i.ytimg.com/vi/3zhSRWIcddU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDVRJt1-b3tKiHhEBSgdOyCyqRlZw" alt="" onclick="location.href='index.html'">
+            <span class="like-video-4-text"> 악질 트롤러 박제합니다 | 발로란트 갓데드</span>
+            <p>갓데드</p>
+            <img class="more-icon" src="img/more.png" alt="">
+        </div>
+        
+
+    </div>
+
+    
+    <script>
+        window.onload = function() {
+     
+        function onClick() {
+            document.querySelector('.upload-main').style.display ='block';
+            document.querySelector('.black_bg').style.display ='block';
+        }
+        function offClick() {
+            document.querySelector('.upload-main').style.display ='none';
+            document.querySelector('.black_bg').style.display ='none';
+        }
+        function onClick2() {
+         document.querySelector('.upload-main2').style.display ='block';
+         document.querySelector('.upload-main').style.display ='none';
+         document.querySelector('.black_bg').style.display ='block';
+        }   
+        function offClick2() {
+            document.querySelector('.upload-main2').style.display ='none';
+            document.querySelector('.black_bg').style.display ='none';
+        }
+        
+        document.getElementById('upload-modal').addEventListener('click', onClick);
+        document.getElementById('upload-modal-close').addEventListener('click', offClick);
+
+        document.getElementById('upload-modal2').addEventListener('click', onClick2);
+        document.getElementById('upload-modal-close2').addEventListener('click', offClick2);
+
+    };
+    </script>
+
+
+
+</body>
+</html>
